@@ -1,0 +1,13 @@
+Special Features of Our Program
+-------------------------
+
+1- It has a Responsive Design and works smoothly in different resolutions.
+
+2- Agile Model  has been used as the design model and 
+the test codes of many modules are also written.
+
+3- The program is completely suitable for Object-Oriented software and 
+has been written by considering SOLID principles.
+
+4- Generic structures, interfaces, pattern designs are used in the program.
+

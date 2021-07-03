@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox pickOnBounds="false" prefHeight="579.0" prefWidth="682.0" styleClass="pane" stylesheets="@../../resources/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.backup.yedeklemeGecmisiController">
+
+    <HBox alignment="CENTER" pickOnBounds="false" prefHeight="36.0" prefWidth="404.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik1-style2" text="History Backups" textAlignment="CENTER" wrappingWidth="501.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+    </HBox>
+    <VBox styleClass="dark-panel-with-border" VBox.vgrow="ALWAYS">
+       <HBox VBox.vgrow="ALWAYS">
+           <VBox.margin>
+             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+           </VBox.margin>
+         <children>
+            <TableView fx:id="tableView" prefHeight="550.0" prefWidth="1000.0" HBox.hgrow="ALWAYS" />
+         </children>
+   
+                </HBox>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+    </VBox>
+</VBox>

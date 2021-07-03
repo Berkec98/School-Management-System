@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" prefHeight="472.0" prefWidth="736.0" stylesheets="@../../resources/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.board.SettingController">
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+   <children>
+      <VBox alignment="CENTER" prefHeight="476.0" prefWidth="239.0" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </HBox.margin>
+         <children>
+            <VBox prefHeight="440.0" prefWidth="200.0" styleClass="dark-panel-with-border">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik2" text="Definitions">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnFaculty" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogFaculties" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Faculty">
+                           <padding>
+                              <Insets bottom="6.0" left="15.0" right="15.0" top="6.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnDepartment" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogCrudDepartment" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Departments" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnClazz" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogCrudClazz" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Classes" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnNote" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogCrudNote" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Notes" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnVarsayilanlar" alignment="CENTER" disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Default Settings" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </HBox.margin>
+         <children>
+            <VBox prefHeight="440.0" prefWidth="200.0" styleClass="dark-panel-with-border">
+               <children>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik2" text="Backup Settings">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnVeriYedekle" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogVerileriYedekle" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Backup Data" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnGeriYukle" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogVerileriGeriYukle" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Restore Data" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnOtoYedekleme" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogOtomatikYedekle" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Auto Backup Settings" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnYedeklemeGecmisi" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogYedeklemeGecmisi" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Backup History" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnUpdate" alignment="CENTER" disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Check Updates" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnHakkinda" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogHakkinda" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="About Us" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </HBox.margin>
+         <children>
+            <VBox prefHeight="440.0" prefWidth="200.0" styleClass="dark-panel-with-border">
+               <children>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik2" text="Authorization">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnGrupTanimla" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogCrudGroups" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="User Deifinitions" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnKullanicilar" alignment="CENTER" mnemonicParsing="false" onAction="#showDialogCrudUsers" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Register User" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnYetkilendirme" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showDialogPermissions" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Assign Users Privileges" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="22.0" layoutY="191.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik2">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="32.0" layoutY="32.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik2" text="Other">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="27.0" layoutY="82.0">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#showGecmisSistemMesajlari" prefHeight="40.0" prefWidth="200.0" styleClass="button-style2" text="Messages History" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <InnerShadow height="65.48" radius="22.6025" width="26.93" />
+   </effect>
+</HBox>

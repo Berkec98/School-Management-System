@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="240.0" prefWidth="705.0" stylesheets="@../../resources/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.board.PersonBoardController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="378.0" prefWidth="955.0" styleClass="dark-panel-with-border">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik1" text="REGISTERING PERSONS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="188.0" prefWidth="443.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="btnRegProfessor" alignment="CENTER" mnemonicParsing="false" onAction="#showRegisterProfessor" prefHeight="148.0" prefWidth="200.0" styleClass="button-style3" text="Register Professor">
+                     <padding>
+                        <Insets bottom="6.0" left="15.0" right="15.0" top="6.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnRegPersonnel" alignment="CENTER" layoutX="371.0" layoutY="30.0" mnemonicParsing="false" onAction="#showRegisterOtherPersonnel" prefHeight="148.0" prefWidth="200.0" styleClass="button-style3" text="Register Other Personnel" textAlignment="CENTER" wrapText="true">
+                     <padding>
+                        <Insets bottom="6.0" left="15.0" right="15.0" top="6.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnRegStudent" alignment="CENTER" layoutX="471.0" layoutY="30.0" mnemonicParsing="false" onAction="#showRegisterStudent" prefHeight="148.0" prefWidth="200.0" styleClass="button-style3" text="Register Student">
+                     <padding>
+                        <Insets bottom="6.0" left="15.0" right="15.0" top="6.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+</VBox>

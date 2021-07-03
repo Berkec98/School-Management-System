@@ -1,0 +1,244 @@
+
+*{
+    /*BASE COLORS*/
+    baseRenkAcikTon: #505050;
+    baseRenk: #303030;
+    /*
+    TABLE COLORS
+     */
+    table-background:rgba(81, 88, 102, 0.9);
+  /*  table-cell-border-color: #21252E;*/
+    /*BUTON COLORS*/
+    acikGri: #7c7c7c;
+    buton-background: #38424B;
+    siyahRenk: rgba(0, 0, 0, 0.8);
+    simSiyah:black;
+    text-color: white;
+    edaRenk: #eda678;
+    edaRenkMat: #764b39;
+    butonZemin: rgba(79, 13, 6, 0.9);
+    kirmiziRenk: red;
+    comboBorder: #8ED3AA;
+    /*edaRenk2:rgb(255, 126, 87);*/
+    -fx-base: baseRenk;
+    -fx-text-fill: simSiyah;
+    -fx-font-family: "Trebuchet MS";
+    -fx-font-weight: normal;
+}
+
+
+/*
+.table-row-cell:odd{
+    -fx-background-color:  baseRenkAcikTon;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; !* 0 *!
+}
+*/
+
+.baslik1 {
+    -fx-effect: dropshadow(three-pass-box, edaRenk, 3, 0.0, 0, 1);
+    -fx-text-alignment: center;
+    -fx-font-size: 235%;
+}
+
+
+.baslik1-style2 {
+    -fx-effect: dropshadow(one-pass-box, edaRenk, 2, 0.5, 0.0, 0.0);
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 27px;
+}
+
+.baslik2 {
+    -fx-font-size: 157%;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, edaRenk, 0, 1,1,1);
+}
+
+
+
+.custom-vbox2 {
+    -fx-border-insets: 10px;
+    -fx-border-width: 2px;
+    -fx-border-color: radial-gradient(radius 100%, baseRenk, siyahRenk, acikGri);
+    -fx-padding: 10px;
+}
+
+
+
+.custom-vbox {
+    -fx-border-insets: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: radial-gradient(radius 100%, kirmiziRenk,comboBorder,siyahRenk);
+    -fx-padding: 10px;
+}
+
+
+
+.button-style2:hover, .button-style3:hover {
+
+    -fx-background-color: simSiyah,
+    buton-background,
+    radial-gradient(center 50% 0%, radius 100%, acikGri, baseRenk);
+}
+
+/*.button-style2:hover, .button-style3:hover {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+}*/
+
+.button-style3 {
+    -fx-font-size:125%;
+    -fx-background-color: linear-gradient(table-background, buton-background);
+    -fx-border-color: edaRenk;
+}
+
+.combo-style2 {
+    -fx-text-fill: edaRenk;
+    -fx-border-color: edaRenk;
+    -fx-background-color: buton-background;
+    -fx-effect: dropshadow(three-pass-box, baseRenk, 5, 0, 0, 0);
+}
+
+
+.combo-style3, .text-style3 {
+    -fx-cursor: hand;
+    -fx-background-color: RGB(125, 125, 125); /* bu önemli  sistemin default değeri ve çok şık oturuyor*/
+    -fx-border-color: siyahRenk;
+    -fx-effect: dropshadow(three-pass-box, comboBorder, 5, 0, 0, 0);
+}
+
+
+.button-style2:pressed, .button-style3:pressed {
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+
+
+
+
+
+
+.text-style1 {
+    -fx-font-size:140%;
+    -fx-effect: dropshadow(one-pass-box, siyahRenk, 0, 1, 0, 0);
+}
+
+
+.text-style2, .baslik1, .baslik1-style2 {
+    -fx-font-weight: bold;
+}
+
+
+.combo-style1:focused, .combo-style2:focused, .combo-style3:focused, .combo-style4:focused, .text-style3:focused {
+    -fx-border-color: edaRenk;
+}
+
+.combo-style1, .combo-style2, .combo-style3, .combo-style4, .text-style3 {
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+}
+
+.combo-style1 {
+    -fx-text-fill: siyahRenk;
+    -fx-background-color: baseRenkAcikTon;
+    -fx-effect: dropshadow(three-pass-box, siyahRenk, 5, 0, 0, 0);
+}
+
+
+.combo-style4 {
+    -fx-text-fill: siyahRenk;
+    -fx-effect: dropshadow(three-pass-box, siyahRenk, 5, 0, 0, 0);
+}
+
+/*
+.table-view, .table-view-style2 {
+    -fx-control-inner-background: table-background;
+    -fx-table-cell-border-color: table-cell-border-color;
+}*/
+
+
+.table-view .column-header, .table-view-style2 .column-header, .table-view-style2.filler, .table-view .filler {
+    -fx-size: 35px;
+}
+
+.table-view .column-header .label {
+
+}
+
+
+
+
+.button-style2, .button-style3 {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-fill: text-color;
+}
+
+.dark-panel-with-border {
+    -fx-padding: 10px;
+    -fx-margin: 10px;
+    -fx-background-color: baseRenk;
+    -fx-background-size: 10px;
+    -fx-border-color: edaRenk;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+
+
+
+.koyu-zemin {
+    -fx-background-color: baseRenk;
+}
+
+
+
+
+.panel {
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+
+
+.panelDuzKenar, .panel {
+
+    -fx-border-width: 0.23%;
+    -fx-border-color: siyahRenk;
+    -fx-background-color: baseRenkAcikTon;
+}
+
+
+
+.table-view {
+    -fx-border-width: 0.15%;
+    -fx-border-color: siyahRenk;
+}
+
+
+
+
+.text-style2 {
+    -fx-font-size: 110%;
+    -fx-effect: dropshadow(THREE-pass-box, edaRenkMat, 0, 0.8, 1, 0);
+}
+
+
+
+
+.button-style2 {
+    -fx-background-color: linear-gradient(butonZemin, buton-background);
+    -fx-border-color: edaRenkMat;
+}
+
+/*
+-fx-border-color:radial-gradient(radius 100%, chocolate, darkgray, black);
+-fx-fill: radial-gradient(focus-angle 45deg, focus-distance 20%, center 25% 25%, radius 50%, reflect, red 25%, black 75%);
+-fx-fill: radial-gradient(center 50% 50% , radius 12% , repeat, #fffaf0, #008080, #90ee90);
+-fx-fill: linear-gradient(from 0% 0% to 25% 25%, repeat, red 33%, black 66%);
+ */
+

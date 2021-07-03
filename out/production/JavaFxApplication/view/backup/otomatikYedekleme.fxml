@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox pickOnBounds="false" prefHeight="452.0" prefWidth="779.0" styleClass="pane" stylesheets="@../../resources/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.backup.OtomatikYedeklemeController">
+
+    <HBox alignment="CENTER" pickOnBounds="false" prefHeight="36.0" prefWidth="404.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik1-style2" text="Automatic Backup Panel" textAlignment="CENTER" wrappingWidth="501.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+    </HBox>
+    <VBox styleClass="dark-panel-with-border" VBox.vgrow="ALWAYS">
+        <HBox alignment="CENTER_LEFT">
+            <VBox.margin>
+                <Insets left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+         <children>
+               <Button mnemonicParsing="false" onAction="#backupToPostgreSQL" prefHeight="27.0" prefWidth="180.0" styleClass="button-style3" text="Select backup location">
+                   <HBox.margin>
+                       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                   </HBox.margin>
+               </Button>
+            <TextField fx:id="txtPath" prefHeight="28.0" prefWidth="478.0" styleClass="combo-style3" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style3" text="First Backup Date" wrappingWidth="174.2197265625">
+            <HBox.margin>
+               <Insets left="10.0" right="5.0" />
+            </HBox.margin>
+         </Text>
+         <DatePicker fx:id="dPickerYedBTarihi" prefHeight="31.0" prefWidth="181.0" styleClass="combo-style3" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </DatePicker>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style3" text="Backup period " textAlignment="RIGHT" wrappingWidth="165.412109375">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </Text>
+         <ComboBox fx:id="cmbPeriod" prefHeight="28.0" prefWidth="227.0" styleClass="combo-style3" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </ComboBox>
+            <VBox.margin>
+                <Insets left="5.0" right="5.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="25.0">
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" />
+            </VBox.margin>
+        </HBox>
+       <HBox prefWidth="539.0">
+           <VBox.margin>
+             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+           </VBox.margin>
+           <JFXListView fx:id="listView" onMouseClicked="#listView_ClickOn" prefHeight="300.0" prefWidth="526.0" HBox.hgrow="ALWAYS" />
+   
+                </HBox>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+    </VBox>
+    <HBox alignment="CENTER_LEFT" pickOnBounds="false" prefHeight="44.0" prefWidth="549.0">
+        <Button fx:id="btnSave" mnemonicParsing="false" onAction="#save" prefHeight="35.0" prefWidth="100.0" styleClass="button-style2" text="Save">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="btnDelete" disable="true" layoutX="318.0" layoutY="15.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="100.0" styleClass="button-style2" text="Delete">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="btnUpdate" disable="true" layoutX="388.0" layoutY="10.0" mnemonicParsing="false" onAction="#update" prefHeight="35.0" prefWidth="100.0" styleClass="button-style2" text="Update">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="btnCancel" disable="true" mnemonicParsing="false" onAction="#cancel" prefHeight="35.0" prefWidth="100.0" styleClass="button-style2" text="Cancel">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+        </Button>
+        <VBox.margin>
+          <Insets bottom="20.0" left="20.0" right="10.0" top="10.0" />
+        </VBox.margin>
+    </HBox>
+</VBox>

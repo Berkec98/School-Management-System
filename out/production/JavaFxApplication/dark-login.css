@@ -1,0 +1,40 @@
+
+
+*{
+    -fx-primary: #2A2E37;
+    -fx-secondary:#eda678;
+    -fx-primaryText:#B2B2B2;
+
+}
+.dialog-pane > .button-bar > .container {
+    -fx-padding: 0;
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+.glyph-icon{
+    -fx-fill:-fx-primaryText;
+}
+
+.button{
+    -fx-text-fill: -fx-primaryText;
+}
+
+.login-buttons{
+    -fx-border-color:-fx-secondary ;
+    -fx-border-radius:20px ;
+    -fx-background-radius:20px ;
+}
+
+.login-buttons:hover{
+    -fx-border-color:-fx-secondary ;
+    -fx-background-color:-fx-secondary ;
+    -fx-text-fill:-fx-primary ;
+}
+
+.text-field{
+    -fx-text-fill:-fx-primaryText ;
+    -fx-font-size:13pt;
+    -jfx-focus-color:-fx-secondary;
+}

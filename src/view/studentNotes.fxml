@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox pickOnBounds="false" prefHeight="559.0" prefWidth="804.0" styleClass="panel" stylesheets="@../resources/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentNotesController">
+   <children>
+      <HBox alignment="CENTER" pickOnBounds="false">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="baslik1" text="Student Grade" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" pickOnBounds="false">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <VBox prefHeight="246.0" prefWidth="880.0" styleClass="custom-vbox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="76.0" pickOnBounds="false">
+                     <children>
+                        <Text fx:id="lblStudent" layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Student Grades" textAlignment="CENTER" wrappingWidth="854.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" pickOnBounds="false">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="76.0" pickOnBounds="false">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Class" wrappingWidth="55.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="cmbClass" prefHeight="31.0" prefWidth="315.0" styleClass="combo-style3">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Year" wrappingWidth="54.62548828125">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="txtYear" prefWidth="80.0" promptText="Midterm" styleClass="text-style3" text="0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Term">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="cmbTerm" layoutX="85.0" layoutY="15.0" prefHeight="31.0" prefWidth="145.0" styleClass="combo-style3">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="944.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" pickOnBounds="false">
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Quiz" wrappingWidth="60.62060546875" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="txtQuiz" prefHeight="31.0" prefWidth="80.0" styleClass="text-style3" text="0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Midterm">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="txtMidterm" layoutX="172.0" layoutY="14.0" prefWidth="80.0" styleClass="text-style3" text="0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Final">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="txtFinal" layoutX="346.0" layoutY="14.0" prefWidth="80.0" styleClass="text-style3" text="0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Büt">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="txtIntegration" layoutX="391.0" layoutY="12.0" prefWidth="80.0" styleClass="text-style3" text="0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin></TextField>
+                              <Text layoutX="456.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-style1" text="Grade">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="txtGrade" disable="true" layoutX="346.0" layoutY="14.0" prefWidth="80.0" styleClass="text-style3" text="0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="txtHaffNotu" disable="true" layoutX="665.0" layoutY="14.0" prefWidth="80.0" promptText="Harf Notu" styleClass="text-style3">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" pickOnBounds="false" prefHeight="49.0" prefWidth="783.0">
+                     <children>
+                        <Button fx:id="btnSave" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="183.0" styleClass="button-style3" text="Save" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="75.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnDelete" disable="true" layoutX="318.0" layoutY="15.0" mnemonicParsing="false" onAction="#delete" prefHeight="34.0" prefWidth="191.0" styleClass="button-style3" text="Delete" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnUpdate" disable="true" layoutX="388.0" layoutY="10.0" mnemonicParsing="false" onAction="#update" prefHeight="34.0" prefWidth="193.0" styleClass="button-style3" text="Update" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnCancel" disable="true" mnemonicParsing="false" onAction="#cancel" prefHeight="34.0" prefWidth="175.0" styleClass="button-style3" text="Cancel" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" onKeyReleased="#tableViewYukariAsagi" onMouseClicked="#updateEntityFromSelectionModel" prefHeight="439.0" prefWidth="1084.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" />
+         </VBox.margin></TableView>
+   </children>
+</VBox>

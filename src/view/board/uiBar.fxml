@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="713.0" prefWidth="178.0" styleClass="dark-panel-with-border" stylesheets="@../../resources/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.board.UIBarController">
+   <children>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btnStudentSec" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openSelect" prefHeight="66.0" prefWidth="159.0" styleClass="button-style3" text="Select Student" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MALE" size="35" styleClass="icons" textAlignment="CENTER" wrappingWidth="35.0" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btnStudent" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openStudentIdentification" prefHeight="65.0" prefWidth="156.0" styleClass="button-style3" text="Register Student" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER_PLUS" size="35" styleClass="icons" wrappingWidth="39.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btnSelectedStuNotes" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openSelectedStuNotes" prefHeight="64.0" prefWidth="155.0" styleClass="button-style3" text="Note Module" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MAP" size="35" styleClass="icons" textAlignment="CENTER" wrappingWidth="53.0" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="91.0" prefWidth="163.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btnRegisterForACourse" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openRegisterForACourse" prefHeight="66.0" prefWidth="155.0" styleClass="button-style3" text="Select Course" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PENCIL" size="35" styleClass="icons" textAlignment="CENTER" wrappingWidth="40.0" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btnAppointment" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openAppointment" prefHeight="67.0" prefWidth="147.0" styleClass="button-style3" text="Appointment Module" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="INFO" size="35" styleClass="icons" textAlignment="CENTER" wrappingWidth="25.0" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btnRecord" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openRecordIdentification" prefHeight="67.0" prefWidth="159.0" styleClass="button-style3" text="Recording Module" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ID_CARD" size="35" styleClass="icons" wrappingWidth="41.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btnAyarlar" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openSettings" prefHeight="64.0" prefWidth="156.0" styleClass="button-style3" text="Settings" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="GEAR" size="35" styleClass="icons" wrappingWidth="30.0" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btnLog" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openLog" prefHeight="66.0" prefWidth="161.0" styleClass="button-style3" text="Log" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="JOOMLA" size="35" styleClass="icons" wrappingWidth="27.0" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#openExit" prefHeight="64.0" prefWidth="132.0" styleClass="button-style3" text="Close" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="POWER_OFF" size="35" styleClass="icons" wrappingWidth="30.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <effect>
+      <InnerShadow choke="0.13" height="38.79" radius="18.155" width="35.83" />
+   </effect>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
